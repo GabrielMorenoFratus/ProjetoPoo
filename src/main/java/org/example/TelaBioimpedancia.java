@@ -119,7 +119,7 @@ public class TelaBioimpedancia extends Application {
         stage.getIcons().add(logoApp);
 
         // cria a cena e aplica o tema escuro
-        Scene scene = new Scene(raiz, 480, 840);
+        Scene scene = new Scene(raiz, 480, 740);
 
         Estilo.aplicarTema(scene);
 
