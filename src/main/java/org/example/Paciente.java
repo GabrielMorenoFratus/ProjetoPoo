@@ -1,24 +1,30 @@
 package org.example;
 
+// classe abstrata com os dados comuns de homem e mulher
 public abstract class Paciente implements Calculavel {
 
+    // atributos do paciente
     private String nome;
     private int idade;
     private double altura;
 
+    // construtor que recebe nome, idade e altura
     public Paciente(String nome, int idade, double altura) {
         this.nome = nome;
         this.idade = idade;
         this.altura = altura;
     }
 
+    // metodo que as classes filhas precisam implementar
     public abstract String getSexo();
 
+    // indice resistivo = altura ao quadrado / resistencia
     public double calcularIndiceResistivo(double resistencia) {
 
         return (altura * altura) / resistencia;
     }
 
+    // getters e setters
     public String getNome() {
 
         return nome;
@@ -49,6 +55,7 @@ public abstract class Paciente implements Calculavel {
         this.altura = altura;
     }
 
+    // texto que representa o paciente: nome, sexo e idade
     @Override
     public String toString() {
 
