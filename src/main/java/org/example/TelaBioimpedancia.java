@@ -92,10 +92,10 @@ public class TelaBioimpedancia extends Application {
         HBox botoes = new HBox(10, btnCalcular, btnLimpar, btnLimparHistorico);
 
         // carrega as imagens da pasta downloads
-        imagemNormal = new Image("file:C:/Users/gmore/Downloads/gabrielprojeto.jpg");
-        imagemAbaixo = new Image("file:C:/Users/gmore/Downloads/magro.jpg");
-        imagemObesidade = new Image("file:C:/Users/gmore/Downloads/gordo.jpg");
-        logoApp = new Image("file:C:/Users/gmore/Downloads/logo.jpg");
+        imagemNormal = new Image(getClass().getResource("/imagens/gabrielprojeto.jpg").toExternalForm());
+        imagemAbaixo = new Image(getClass().getResource("/imagens/magro.jpg").toExternalForm());
+        imagemObesidade = new Image(getClass().getResource("/imagens/gordo.jpg").toExternalForm());
+        logoApp = new Image(getClass().getResource("/imagens/logo.jpg").toExternalForm());
 
         // define o tamanho da imagem mantendo a proporcao
         logo.setFitWidth(300);
