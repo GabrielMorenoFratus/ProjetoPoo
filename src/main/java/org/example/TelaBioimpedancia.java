@@ -44,6 +44,7 @@ public class TelaBioimpedancia extends Application {
     private Image imagemAbaixo;
     private Image imagemNormal;
     private Image imagemObesidade;
+    private Image logoApp;
 
 
 
@@ -94,6 +95,7 @@ public class TelaBioimpedancia extends Application {
         imagemNormal = new Image("file:C:/Users/gmore/Downloads/gabrielprojeto.jpg");
         imagemAbaixo = new Image("file:C:/Users/gmore/Downloads/magro.jpg");
         imagemObesidade = new Image("file:C:/Users/gmore/Downloads/gordo.jpg");
+        logoApp = new Image("file:C:/Users/gmore/Downloads/logo.jpg");
 
         // define o tamanho da imagem mantendo a proporcao
         logo.setFitWidth(300);
@@ -114,7 +116,7 @@ public class TelaBioimpedancia extends Application {
 
         // titulo e icone da janela
         stage.setTitle("Sistema de Bioimpedância");
-        stage.getIcons().add(imagemNormal);
+        stage.getIcons().add(logoApp);
 
         // cria a cena e aplica o tema escuro
         Scene scene = new Scene(raiz, 480, 840);
